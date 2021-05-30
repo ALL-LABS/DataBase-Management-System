@@ -1,0 +1,18 @@
+declare
+n number:=10;
+i number:=1;
+j number:=1;
+begin
+
+dbms_output.put_line('using while loop');
+while(i<=n)
+loop
+dbms_output.put_line(i);
+i:=i+1;
+end loop;
+dbms_output.put_line('using for loop');
+for j in 1..n
+loop
+dbms_output.put_line(j);
+end loop;
+end;
