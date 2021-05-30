@@ -1,0 +1,23 @@
+declare
+    n number:=12321;
+    m number;
+    rev number:=0;
+    r number;
+   
+begin
+    n:=12321;
+    m:=n;
+    while n>0
+    loop
+        r:=mod(n,10);
+        rev:=(rev*10)+r;
+        n:=trunc(n/10);
+    end loop;
+      
+    if(m = rev)
+    then
+        dbms_output.put_line(m||' '||'is palindrome number');
+    else
+        dbms_output.put_line(m||' '||'is not palindrome number');
+    end if;
+end;
