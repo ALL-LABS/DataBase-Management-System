@@ -1,0 +1,19 @@
+declare
+n number:=20;
+i number:=1;
+cnt number:=0;
+begin
+for i in 1..n
+loop
+if(mod(n,2)=0)
+then
+cnt:=cnt+1;
+end if;
+end loop;
+if(cnt=2)
+then
+dbms_output.put_line(n||' '||'is prime number');
+else
+dbms_output.put_line(n||' '||'is not prime number');
+end if;
+end;
