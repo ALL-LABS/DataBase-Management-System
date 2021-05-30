@@ -1,0 +1,8 @@
+declare
+a number:=28;
+b number:=17;
+c number;
+begin
+c:=a+b;
+dbms_output.put_line('addition='||c);
+end;
