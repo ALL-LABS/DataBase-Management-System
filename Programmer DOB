@@ -1,0 +1,11 @@
+declare
+pn programmer.pname%type:='Ramesh';
+db programmer.dob%type;
+begin
+select dob into db from programmer where pname=pn;
+dbms_output.put_line('date of birth is'||' '||db);
+exception
+when no_data_found 
+then
+dbms_output.put_line('no data');
+end;
